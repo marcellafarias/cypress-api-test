@@ -1,4 +1,5 @@
-import * as GetUsers from '../requests/GetUsers.request';
+/// <reference types="cypress" />
+import * as GetUsers from '../../../requests/GetUsers.request';
 
 describe('Lista todos os usuários', () => {
 

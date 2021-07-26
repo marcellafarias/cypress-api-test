@@ -1,6 +1,6 @@
-import * as DeleteUser from '../requests/DeleteUser.request';
-import * as GetUsers from '../requests/GetUsers.request';
-import * as PostUser from '../requests/PostUser.request';
+import * as DeleteUser from '../../../requests/DeleteUser.request';
+import * as GetUsers from '../../../requests/GetUsers.request';
+import * as PostUser from '../../../requests/PostUser.request';
 
 describe('Exclui usuário', () => {
 

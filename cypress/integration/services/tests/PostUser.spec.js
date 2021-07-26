@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import * as PostUser from '../requests/PostUser.request';
+import * as PostUser from '../../../requests/PostUser.request';
 
 describe('Cria usuários', () => {
 
