@@ -2,7 +2,7 @@
 --------------------------------------------------------------
 <img alt="Cypress" src="https://cloud.githubusercontent.com/assets/1268976/20607953/d7ae489c-b24a-11e6-9cc4-91c6c74c5e88.png" width="300">
 
-# Automated tests using Cypress
+# Automated API tests using Cypress
 
 ### Requirements:
 * [Visual Studio Code](https://code.visualstudio.com/) 
@@ -11,23 +11,20 @@
 
 ### Project structure:
 
-+ fixtures
-   +  Load a fixed set of data located in a json file.
++ integration/services/tests
+   +  Contains tests and implementation, separated by type scenario.
 
-+ integration
-   +  Contains tests and the step definitions, separated by type request.
-
-+ reports
-   + Location where the reports are saved after running the tests, to inspect it just open the index.html in any browser.
++ cypress/requests
+   + Contains the request methods implementation, separated by type request
   
 + support
-   + Location where is possible to create custom commands and overwrite existing ones, also contains the file which configures the html report.
+   + Location where is possible to create custom commands and overwrite existing ones.
 
 + cypress.json
-   +  This file is used to store the projectId and any configuration values.
+   +  This file is used to store the baseUrl and any configuration values.
 
 + package.json
-   +  This file is used by npm to handle the project's dependencies, also contain other metadata such as a project description.
+   +  This file is used by npm to handle the project's dependencies, scripts, also contain other metadata such as a project description.
 - - -
 ### Starting the tests:
 
@@ -45,10 +42,10 @@ $ npm install
 ```sh
 $ npm run cypress:open
 ```
-Or to run all tests from the CLI and generate reports:
+Or to run all tests from the CLI and generate screenshots/videos evidence:
 ```sh
 $ npm run cypress:run
 ```
-#### Reports:
-After each ***cypress:run*** a report with videos evidences is automatically generated, located at the reports file and videos file.
+### Reports:
+After each ***cypress:run*** a report with screenshots and videos evidences is automatically generated, located at the reports file and videos file.
 - - -
