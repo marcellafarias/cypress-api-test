@@ -13,7 +13,7 @@ function createUser() {
         },
         body: {
             "name": "Marcella Test - Create User",
-            "email": brandData.randomName + "@gmail.com",
+            "email": brandData.randomName + "@test.com",
             "gender": "Female",
             "status": "Active" 
         },
